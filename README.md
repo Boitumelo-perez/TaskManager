@@ -30,7 +30,7 @@ A RESTful API built with **Spring Boot** that enables secure task management wit
 ### Local Development
 ```bash
 # 1. Clone repository
-git clone https://github.com/Boitumelo-perez/task-manager.git
+navigate to the root
 cd task-manager
 
 # 2. Run with Maven
