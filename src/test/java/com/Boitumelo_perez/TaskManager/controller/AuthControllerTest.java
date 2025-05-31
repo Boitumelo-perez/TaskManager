@@ -35,7 +35,7 @@ class AuthControllerTest {
     @MockBean
     private UserService userService;
 
-    @MockBean
+    @Autowired
     private JwtUtil jwtUtil;
 
     @Test
@@ -45,7 +45,6 @@ class AuthControllerTest {
         String password = "testpass";
         String token = "fake.jwt.token";
 
-        AuthRequest request = new AuthRequest(username, password);
         Authentication authentication = new UsernamePasswordAuthenticationToken(username, password);
 
         Mockito.when(authenticationManager.authenticate(
